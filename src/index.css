@@ -1,0 +1,64 @@
+/* src/index.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+}
+
+#app {
+  text-align: center;
+  color: #2c3e50;
+  background-color: black;
+  max-width: 30rem;
+  margin: 2rem auto;
+  box-shadow: rgba(32, 32, 32, 0.3) 0px 22px 70px 4px;
+  border-radius: 10px;
+}
+
+.app-container {
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  color: #b2d8d8;
+  border: 1px solid #b2d8d8;
+  border-radius: 4px;
+  transition: background-color 0.7s;
+  margin-top: 3rem;
+  box-shadow: rgba(136, 232, 231, 0.878) 6px 2px 16px 0px;
+  box-shadow: rgba(136, 232, 231, 0.878) 0px 30px 60px -12px inset,
+    rgba(136, 232, 231, 0.878) 0px 9px 18px -10px inset;
+  margin-bottom: 2rem;
+  gap: 2px;
+}
+
+.btn:hover {
+  background-color: #b2d8d8;
+  color: black;
+}
+.date {
+  color: #b2d8d8;
+  padding: 4rem;
+  color: rgba(136, 232, 231, 0.878);
+}
+@media (max-width: 640px) {
+  #app {
+    width: 90%;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
